@@ -3,7 +3,8 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 2rem;
+    padding: 4rem 5rem;
+    text-align: center;
     h5 {
         font-size: 1rem;
         margin: 0 0 0.7rem 0;
@@ -17,6 +18,9 @@
         flex-direction: row;
         flex-wrap: nowrap;
         align-content: center;
+        @include mobile {
+            flex-direction: column;
+        }
         p {
             margin: 0 0.5rem;
             font-weight: normal;

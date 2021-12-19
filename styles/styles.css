@@ -1,5 +1,6 @@
+/*This size or smaller*/
 header {
-  background-color: #b1b1b1;
+  background-color: #ffffff;
   position: relative;
   margin: 0;
   padding: 1rem 0;
@@ -13,7 +14,7 @@ header h1 {
 }
 
 header nav {
-  background-color: pink;
+  background-color: rgba(255, 255, 255, 0);
   position: absolute;
   top: 20px;
   left: 0px;
@@ -94,19 +95,58 @@ header nav #promociones {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 3rem 5rem;
 }
 
 .newsletter h3 {
   text-transform: uppercase;
+  text-align: center;
   font-size: 2rem;
   margin: 3rem 0 0 0;
 }
 
+@media screen and (max-width: 400px) {
+  .newsletter h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter h3 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .newsletter h3 {
+    font-size: 1.8rem;
+  }
+}
+
 .newsletter h2 {
   text-transform: uppercase;
+  text-align: center;
   font-size: 2rem;
   font-weight: normal;
   margin: 0 0 1rem 0;
+}
+
+@media screen and (max-width: 400px) {
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .newsletter h2 {
+    font-size: 1.8rem;
+  }
 }
 
 .newsletter form {
@@ -153,7 +193,8 @@ header nav #promociones {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
+  padding: 4rem 5rem;
+  text-align: center;
 }
 
 .contact h5 {
@@ -180,6 +221,15 @@ header nav #promociones {
       align-content: center;
 }
 
+@media screen and (max-width: 400px) {
+  .contact__ways {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact__ways p {
   margin: 0 0.5rem;
   font-weight: normal;
@@ -189,10 +239,74 @@ header nav #promociones {
   color: #37da80;
 }
 
+footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3rem 1rem;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 400px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem 6rem;
+  }
+}
+
+footer #footerBtn {
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+footer .footer__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0.2rem;
+}
+
 body {
   margin: 0;
   width: 100%;
   height: 100%;
+  color: #202020;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  color: #202020;
+}
+
+body a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */

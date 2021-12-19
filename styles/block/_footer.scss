@@ -1,0 +1,29 @@
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+    font-size: 0.75rem;
+    @include mobile{
+        flex-direction: column;
+        padding: 3rem 6rem;
+    }
+    #footerBtn {
+        position: absolute;
+        right: 20px;
+        top: 0;
+    }
+    .footer {
+        &__column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            align-items: flex-start;
+            padding: 0.2rem;
+        }
+    }
+}

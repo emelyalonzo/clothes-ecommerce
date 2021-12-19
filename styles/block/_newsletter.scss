@@ -3,16 +3,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem 5rem;
+    
     h3 {
         text-transform: uppercase;
+        text-align: center;
         font-size: 2rem;
         margin: 3rem 0 0 0;
+        @include mobile {
+            font-size: 1.5rem;
+        }
+        @include tablet {
+            font-size: 1.7rem;
+        }
+        @include desktop {
+            font-size: 1.8rem;
+        }
     }
     h2 {
         text-transform: uppercase;
+        text-align: center;
         font-size: 2rem;
         font-weight: normal;
         margin: 0 0 1rem 0;
+        @include mobile {
+            font-size: 1.5rem;
+        }
+        @include tablet {
+            font-size: 1.7rem;
+        }
+        @include desktop {
+            font-size: 1.8rem;
+        }
     }
     form {
         display: flex;
