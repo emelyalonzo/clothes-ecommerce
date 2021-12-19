@@ -81,6 +81,10 @@ header nav #promociones {
   font-size: 1rem;
 }
 
+.content__unit:hover {
+  cursor: pointer;
+}
+
 .newsletter {
   display: -webkit-box;
   display: -ms-flexbox;
