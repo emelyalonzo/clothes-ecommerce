@@ -1,5 +1,5 @@
 header {
-  background-color: #a0a0a0;
+  background-color: #b1b1b1;
   position: relative;
   margin: 0;
   padding: 1rem 0;
@@ -78,6 +78,66 @@ header nav #promociones {
   margin: 0 0 1rem 0;
   font-weight: bold;
   font-size: 1rem;
+}
+
+.newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsletter h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 3rem 0 0 0;
+}
+
+.newsletter h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+
+.newsletter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.newsletter form label {
+  font-size: 1.1rem;
+  margin: 0 0 0;
+}
+
+.newsletter form #suscription {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 body {
