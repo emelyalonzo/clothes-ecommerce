@@ -11,7 +11,7 @@
 <body>
     
     <header>
-        <h1>mi tienda</h1>
+        <h1>mi_tienda</h1>
         <nav>
             <a href="#">novedades</a>
             <a href="#">ropa</a>
@@ -19,7 +19,7 @@
             <a href="#">accesorios</a>
             <a href="#">editorials</a>
             <a href="#">join life</a>
-            <a href="#">promociones</a>
+            <a href="#" id="promociones">promociones</a>
         </nav>
     </header>
 
@@ -85,24 +85,26 @@
             <p>12.99 €</p>
         </div>
     </div>
+    <hr>
     <div class="newsletter">
         <h3>10% de descuento</h3>
-        <h3>¡suscríbete a la newsletter!</h3>
+        <h2>¡suscríbete a la newsletter!*</h2>
         <form action="#">
-            <label for="suscription">Introduce tu email</label>
-            <input type="email" id="suscription" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required /><br />
-	        <input type="submit" value="Submit">
+            <label for="suscription">Introduce tu e-mail</label>
+            <input type="email" id="suscription" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
         </form>
     </div>
+    <hr>
     <div class="contact">
-        <p>contacto</p>
+        <h5>Contacto</h5>
         <div class="contact__ways">
-            <p><span class="fas fa-mobile-alt"></span>900 812 900</p>
+            <p id="telephone"><span class="fas fa-mobile-alt"></span>  900 812 900</p>
             <p>Venta online</p>
             <p>Tiendas y empresa</p>
         </div>
         <p>De lunes a viernes, de 9:30 a 22:00</p>
     </div>
+    <hr>
     <footer>
         <div class="footer__column">
             <h4>Guia de compra</h4>

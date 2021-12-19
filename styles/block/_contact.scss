@@ -1,0 +1,28 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 2rem;
+    h5 {
+        font-size: 1rem;
+        margin: 0 0 0.7rem 0;
+        font-weight: bold;
+    }
+    p {
+        margin: 0;
+    }
+    &__ways {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        p {
+            margin: 0 0.5rem;
+            font-weight: normal;
+        }
+        #telephone {
+            color: $green;
+        }
+    }
+}
