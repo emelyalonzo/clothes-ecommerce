@@ -1,3 +1,4 @@
+/*This size or smaller*/
 header {
   background-color: #ffffff;
   position: relative;
@@ -94,19 +95,58 @@ header nav #promociones {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 3rem 5rem;
 }
 
 .newsletter h3 {
   text-transform: uppercase;
+  text-align: center;
   font-size: 2rem;
   margin: 3rem 0 0 0;
 }
 
+@media screen and (max-width: 400px) {
+  .newsletter h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter h3 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .newsletter h3 {
+    font-size: 1.8rem;
+  }
+}
+
 .newsletter h2 {
   text-transform: uppercase;
+  text-align: center;
   font-size: 2rem;
   font-weight: normal;
   margin: 0 0 1rem 0;
+}
+
+@media screen and (max-width: 400px) {
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .newsletter h2 {
+    font-size: 1.8rem;
+  }
 }
 
 .newsletter form {
@@ -153,7 +193,8 @@ header nav #promociones {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
+  padding: 4rem 5rem;
+  text-align: center;
 }
 
 .contact h5 {
@@ -180,6 +221,15 @@ header nav #promociones {
       align-content: center;
 }
 
+@media screen and (max-width: 400px) {
+  .contact__ways {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact__ways p {
   margin: 0 0.5rem;
   font-weight: normal;
@@ -190,6 +240,7 @@ header nav #promociones {
 }
 
 footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,6 +254,22 @@ footer {
       flex-wrap: wrap;
   padding: 3rem 1rem;
   font-size: 0.75rem;
+}
+
+@media screen and (max-width: 400px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem 6rem;
+  }
+}
+
+footer #footerBtn {
+  position: absolute;
+  right: 20px;
+  top: 0;
 }
 
 footer .footer__column {
